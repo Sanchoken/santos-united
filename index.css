@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  background: none;
+  color:white;
+  border: none;
+}
+
+.hero {
+  padding: 60px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 10;
+}
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.form-container button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+.gallery {
+  text-align: center;
+  padding: 30px;
+}
+
+.gallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #888;
+}
+
+.register, .about-club {
+  padding: 30px;
+  text-align: center;
+}
+
+.register form input, .register form button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+footer{
+    text-align: center;
+    color: #f75e65;
+}
+
+
+
